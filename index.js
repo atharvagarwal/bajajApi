@@ -43,6 +43,10 @@ app.post('/bfhl', (req, res) => {
   });
 });
 
+app.get('/',(req, res) => {
+res.send('bajaj.api')
+})
+
 // GET route for /bfhl
 app.get('/bfhl', (req, res) => {
   res.status(200).json({
